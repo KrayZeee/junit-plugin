@@ -121,7 +121,7 @@ public class History {
                            else if (o.getSkipCount() > 0)
                                return ColorPalette.YELLOW;
                            else
-                               return ColorPalette.BLUE;
+                               return ColorPalette.GREEN;
                        }
                    });
                }
@@ -235,7 +235,7 @@ public class History {
             plot.setRenderer(ar);
             ar.setSeriesPaint(0,ColorPalette.YELLOW); // Skips.
             ar.setSeriesPaint(1,ColorPalette.RED); // Failures.
-            ar.setSeriesPaint(2,ColorPalette.BLUE); // Total.
+            ar.setSeriesPaint(2,ColorPalette.GREEN); // Total.
 
             // crop extra space around the graph
             plot.setInsets(new RectangleInsets(0, 0, 0, 5.0));
